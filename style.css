@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
 li,a,button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -35,6 +43,8 @@ header{
     color: #0088a9;
 }
 
+
+
 button{
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
@@ -46,4 +56,37 @@ button{
 
 button:hover{
     background-color: rgba(0, 136, 169, 0);
+}
+
+.toggle-button{
+    position: relative;
+    top: 0.75rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media(max-width:700px){
+    .topLogo{
+        padding-left: 1px;
+    }
+    .toggle-button{
+        display: flex;
+    }
+
+    .nav_links{
+        display: none;
+    }
+
+    
+    
 }
