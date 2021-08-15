@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+/* -----------------------  Header Section -----------------------------------------*/
+.topLogo img{
+    max-height: 70%;
+    max-width: 70%;
+}
+
 
 li,a,button{
     font-family: 'Montserrat', sans-serif;
@@ -19,7 +25,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    box-shadow: 5px 10px 8px #888888;
+    color: black;
+    font-weight: 16px;
 }
 
 .topLogo{
@@ -78,7 +89,11 @@ button:hover{
 @media(max-width:700px){
     .topLogo{
         padding-left: 1px;
+        max-width: 50%;
+        max-height: 50%;
     }
+
+
     .toggle-button{
         display: flex;
     }
@@ -87,6 +102,6 @@ button:hover{
         display: none;
     }
 
-    
-    
 }
+
+/* -----------------------  Header Section End -----------------------------------------*/
