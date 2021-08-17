@@ -21,10 +21,12 @@ ul{
 }
 .footer{
 	background-color: #000000;
-	position: relative;
+	position: fixed;
     padding: 70px 0;
-	
-	
+	left: 0;
+	bottom: 0;
+	right: 0;
+	flex: 0 0 auto;
 }
 
 .footer-col{
